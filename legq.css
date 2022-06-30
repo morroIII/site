@@ -1,0 +1,704 @@
+.bodytype{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.pagetitle{
+  position: relative ;
+  height: 200px;
+  width: auto;
+  z-index: 1000;
+  
+}
+.uptitle{
+  position: relative;
+  margin: 1% 5%;
+  width: auto;
+  height: 50px;
+  top:20px;
+  display: flex;
+  flex-flow: row;
+ display: flex;
+ justify-content:space-between ;
+}
+.bottitle{
+  position: relative;
+  margin: 1% 5%;
+  width: auto;
+  height: 50px;
+  top:50px;
+ 
+}
+.list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  text-transform: uppercase;
+  line-height:8px ;
+  font-size: 15px;
+  
+}
+.sale{
+  background-color: white;
+    font-size: 16px;
+   
+  color: red;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.logo{
+  display: flex;
+  
+  align-items: center;
+  width:250px;
+  height: 50px; 
+  
+}
+.logoname{
+  font-family: 'Montserrat';
+font-style: normal;
+ margin: 0 10px 0 20px;
+ font-weight: 600;
+}
+#diamond {margin-top:1% ;
+  width: 18px;
+  height: 18px;
+  background: none;
+  border: 6px solid #7C48BF ;
+  transform: rotate(45deg); 
+}
+.search{
+  box-sizing:border-box ;
+  border: 1px solid grey;
+  background-color: white;
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.textsearch{
+  border: none;
+  size: 40px;
+  background-color: white;
+  width:  594px;
+    height: 45px;
+  
+  
+}
+.info{
+  width: 500px;
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-between;
+}
+.phone{
+  display: flex;
+  align-items: flex-start; 
+  flex-flow: column;
+height: 50px;
+  line-height:0px;
+}
+.call{
+  font-size: smaller;
+  color: grey;
+  
+}
+.velo{display: none;}
+.number{
+  font-size: small;
+}
+.button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.profile{
+  padding: 0%;
+  width: 45px;
+    height: 45px;
+    background: #202020;
+    border-radius: 22px;
+}
+.korzina{
+  margin-left: 10px;
+  width: 45px;
+    height: 45px;
+    background: #202020;
+    border-radius: 22px;
+}
+.head{  
+  position: relative;
+  left: 14.99px;
+  
+  z-index: 1;
+  width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+  margin: 0%;}
+  .telo{
+    position: relative;
+    height: 0; 
+    width: 10px;
+    background-color: white;
+    border-bottom: 10px solid grey;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-radius:5px ;
+    left: 10px;
+    }
+    .topkor{position: relative;
+      left: 8.94px;
+      width: 10px;
+      height: 5px;  /* высота в два раза меньше ширины, иначе получится полуовал */
+      border: 1px solid white;
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    }
+    .botkor{
+      position: relative;
+      height: 0; 
+      width: 10px;
+      left: 7px;
+      border-top: 10px solid grey;
+      border-left: 3px solid transparent;
+      border-right:3px solid transparent;
+    }
+    
+    .supmenu{
+      background-color: white;
+    color: black;
+  
+    font-size: 16px;
+    border: none;
+    }
+    .supcontent{
+      display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    .supcontent a{ 
+      color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1000;
+    
+    }
+    .supcontent a:hover{
+      background-color: #ddd;
+      
+    }
+    .dropmenu:hover .supcontent{
+      display: block;
+      
+    }
+    .dropmenu:hover .supmenu{
+      background-color: white;
+      color: darkgoldenrod;
+    }
+    .call{
+      text-decoration: none;
+      font-size: medium;
+    }
+    .finde {
+     
+      position: relative;
+      left: 560px;
+      width: 15px;
+      height: 17px; 
+      bottom: 43px;
+      box-sizing: border-box;
+      background-color: aliceblue;
+      
+      border: 2px solid slategray;
+      border-radius: 50%;
+      z-index: 5;
+  }
+  
+  .finde:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 5;
+      
+      width:16px;
+      height: 4px;
+      background-color: slategray;
+      
+      border-radius: 0 7.5px 7.5px 0;
+      
+      transform-origin: 0 50%;
+      transform: translateX(100%) rotate(45deg);
+  }
+  .bgraund{
+  position:relative ;
+  display: flex ;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  width: auto;
+  height: 30px;
+  background-color:black;
+}
+.icone.lupa {
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 3%;
+}
+
+.icone.lupa:after {
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  background-color: black;
+  display: block;
+  content: "";
+  bottom: 99%;
+  right: 80%;
+  
+  
+  transform: rotate(45deg);
+  transform-origin: -10px 40px;
+  
+}
+.medsupmenu{
+  display: none;
+    width: 900px;
+    height: auto;
+ }
+
+
+
+
+
+.nav{display: none;}
+.nav-toggle{display: none;}
+.tyty{
+  display: flex;
+  flex-direction: column;
+}
+  @media screen and (max-width:1455px) {
+    
+    .bottitle{
+      visibility: hidden;
+    }
+    .search{
+      visibility: hidden;
+    }
+    .phone{
+      visibility: hidden;
+    }
+    .textsearch{
+    display: none;
+    }
+    
+    
+
+  
+/**
+ * Переключаемая боковая панель навигации
+ * выдвигающаяся по клику слева
+ */
+ 
+ .nav {
+  display: block;
+  /*  ширна произвольная, не стесняйтесь экспериментировать */
+  width: 280px;
+  min-width: 280px;
+  /* фиксируем и выставляем высоту панели на максимум */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  /* сдвигаем (прячем) панель относительно левого края страницы */
+  left: -360px;
+  /* внутренние отступы */
+  padding: 15px 20px;
+  /* плавный переход смещения панели */
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  transition: left 0.3s;
+  /* определяем цвет фона панели */
+  background: white;
+  /* поверх других элементов */
+  z-index: 2000;
+}
+
+/**
+* Кнопка переключения панели
+* тег <label>
+*/
+
+.nav-toggle {
+  display: block;
+  /* абсолютно позиционируем */
+  position:absolute;
+
+  /* относительно левого края панели */
+  left: 360px;
+  /* отступ от верхнего края панели */
+  
+  /* внутренние отступы */
+  
+  padding: 1.4;
+  /* определяем цвет фона переключателя
+   * чаще вчего в соответствии с цветом фона панели
+  */
+
+  /* цвет текста */
+  color: #dadada;
+  /* вид курсора */
+  cursor: pointer;
+  /* размер шрифта */
+  font-size: 1.4em;
+  line-height: 0.2;
+  /* всегда поверх других элементов страницы */
+  z-index: 2001;
+  /* анимируем цвет текста при наведении */
+  -webkit-transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+  left: auto;
+  top:1em;
+  
+}
+.nav-toggle:after {
+  content: '\2630';
+  text-decoration: none;
+
+}
+
+
+
+
+[id='nav-toggle']:checked ~ .nav {
+  left: 0;
+  box-shadow:inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -moz-box-shadow: inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -webkit-box-shadow: inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  overflow-y:auto;
+}/*!*/
+
+
+
+[id='nav-toggle']:checked ~ main  {
+  -webkit-transform: translateX(320px);
+  -moz-transform: translateX(320px);
+  transform: translateX(320px);
+  margin-right: 320px;
+}
+
+
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+  content: '\2715';
+  color: black;
+  
+
+}
+
+
+
+
+/**
+* формируем непосредственно само меню
+* используем неупорядоченный список для пунктов меню
+* прикрутим трансфомации и плавные переходы
+*/
+
+.nav > ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav > ul > li {
+  line-height: 2.5;
+  opacity: 0;
+  
+  transform: translateX(-50%);
+  
+  transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='nav-toggle']:checked ~ .nav > ul > li {
+  opacity: 1;
+ 
+  transform: translateX(0);
+}
+
+/* определяем интервалы появления пунктов меню */
+
+
+
+
+/**
+* оформление ссылок пунктов меню
+*/
+
+.nav > ul > li  {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+ top: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: BLACK;
+  width: 100%;
+  text-decoration: none;
+  /* плавный переход */
+ 
+  transition: color .5s ease, padding .5s ease;
+}
+
+/**
+* состояние ссылок меню при наведении
+*/
+
+.nav > ul > li :hover,
+.nav > ul > li :focus {
+  
+  padding-left: 15px;
+  color:black;
+}
+
+/**
+* линия подчеркивания ссылок меню
+*/
+
+.nav > ul > li :before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  
+  transition: width 0s ease;
+}
+
+.nav > ul > li :after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: grey;
+  
+
+  transition: width .5s ease;
+}
+
+/**
+* анимируем линию подчеркивания 
+* ссылок при наведении
+*/
+
+.nav > ul > li :hover:before {
+  width: 0%;
+  background: grey;
+
+  transition: width .5s ease;
+}
+
+.nav > ul > li :hover:after {
+  width: 0%;
+  background: transparent;
+
+  transition: width 0s ease;
+}
+
+
+.velo {
+  display: block;
+  /*  ширна произвольная, не стесняйтесь экспериментировать */
+  width: 280px;
+  min-width: 280px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  left: -360px;
+  padding: 15px 20px;
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  transition: left 0.3s;
+  background: white;
+  z-index: 2005;
+}
+
+
+.secnav {
+  display: block;
+  position:absolute;
+  padding: 1.4;
+  cursor: pointer;
+  font-size: 36px;
+  bottom: 67px;
+  height: 5px;
+  left:268px;
+  z-index: 2006;
+  -webkit-transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+
+[id='secnav']:checked ~ .velo > .secnav {
+  left: auto;
+  top:1em;
+  
+}
+.secnav:after {
+  content: '\1F892';
+  text-decoration: none;
+color: black;
+}
+
+
+
+
+[id='secnav']:checked ~ .velo {
+  left: 0;
+  box-shadow:inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -moz-box-shadow: inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -webkit-box-shadow: inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  overflow-y:auto;
+}/*!*/
+
+
+
+[id='secnav']:checked ~ main  {
+  -webkit-transform: translateX(320px);
+  -moz-transform: translateX(320px);
+  transform: translateX(320px);
+  margin-right: 320px;
+}
+
+
+
+[id='secnav']:checked ~ .velo > .secnav:after {
+  content: '\2B9C';
+  color: black;
+  font-size: 36px;
+  left: 50px;
+  bottom: 10px;
+
+}
+
+
+
+.velo > ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.velo > ul > li {
+  line-height: 2.5;
+  opacity: 0;
+  
+  transform: translateX(-50%);
+  
+  transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='secnav']:checked ~ .velo > ul > li {
+  opacity: 1;
+ 
+  transform: translateX(0);
+}
+
+
+.velo > ul > li > a {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+ top: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: BLACK;
+  width: 100%;
+  text-decoration: none;
+
+  
+  transition: color .5s ease, padding .5s ease;
+}
+
+
+.velo > ul > li > a:hover,
+.velo > ul > li > a:focus {
+  
+  padding-left: 15px;
+}
+
+
+
+.velo > ul > li > a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+
+  transition: width 0s ease;
+}
+
+.velo > ul > li > a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: grey;
+
+  transition: width .5s ease;
+}
+
+
+
+.velo > ul > li > a:hover:before {
+  width: 0%;
+  background: grey;
+
+  transition: width .5s ease;
+}
+
+.velo > ul > li > a:hover:after {
+  width: 0%;
+  background: transparent;
+
+  transition: width 0s ease;
+}
+
+
+}
