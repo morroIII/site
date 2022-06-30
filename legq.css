@@ -306,68 +306,38 @@ height: 50px;
     
     
 
-  
-/**
- * Переключаемая боковая панель навигации
- * выдвигающаяся по клику слева
- */
  
  .nav {
   display: block;
-  /*  ширна произвольная, не стесняйтесь экспериментировать */
   width: 280px;
   min-width: 280px;
-  /* фиксируем и выставляем высоту панели на максимум */
   height: 100%;
   position: fixed;
   top: 0;
   bottom: 0;
   margin: 0;
-  /* сдвигаем (прячем) панель относительно левого края страницы */
   left: -360px;
-  /* внутренние отступы */
   padding: 15px 20px;
-  /* плавный переход смещения панели */
   -webkit-transition: left 0.3s;
   -moz-transition: left 0.3s;
   transition: left 0.3s;
-  /* определяем цвет фона панели */
   background: white;
-  /* поверх других элементов */
   z-index: 2000;
 }
 
-/**
-* Кнопка переключения панели
-* тег <label>
-*/
 
 .nav-toggle {
   display: block;
-  /* абсолютно позиционируем */
   position:absolute;
 
-  /* относительно левого края панели */
   left: 360px;
-  /* отступ от верхнего края панели */
-  
-  /* внутренние отступы */
   
   padding: 1.4;
-  /* определяем цвет фона переключателя
-   * чаще вчего в соответствии с цветом фона панели
-  */
-
-  /* цвет текста */
   color: #dadada;
-  /* вид курсора */
   cursor: pointer;
-  /* размер шрифта */
   font-size: 1.4em;
   line-height: 0.2;
-  /* всегда поверх других элементов страницы */
   z-index: 2001;
-  /* анимируем цвет текста при наведении */
   -webkit-transition: color .25s ease-in-out;
   -moz-transition: color .25s ease-in-out;
   transition: color .25s ease-in-out;
@@ -417,12 +387,6 @@ height: 50px;
 
 
 
-/**
-* формируем непосредственно само меню
-* используем неупорядоченный список для пунктов меню
-* прикрутим трансфомации и плавные переходы
-*/
-
 .nav > ul {
   display: block;
   margin: 0;
@@ -445,14 +409,6 @@ height: 50px;
   transform: translateX(0);
 }
 
-/* определяем интервалы появления пунктов меню */
-
-
-
-
-/**
-* оформление ссылок пунктов меню
-*/
 
 .nav > ul > li  {
   display: inline-block;
@@ -465,14 +421,10 @@ height: 50px;
   color: BLACK;
   width: 100%;
   text-decoration: none;
-  /* плавный переход */
  
   transition: color .5s ease, padding .5s ease;
 }
 
-/**
-* состояние ссылок меню при наведении
-*/
 
 .nav > ul > li :hover,
 .nav > ul > li :focus {
@@ -480,10 +432,6 @@ height: 50px;
   padding-left: 15px;
   color:black;
 }
-
-/**
-* линия подчеркивания ссылок меню
-*/
 
 .nav > ul > li :before {
   content: '';
@@ -511,10 +459,6 @@ height: 50px;
   transition: width .5s ease;
 }
 
-/**
-* анимируем линию подчеркивания 
-* ссылок при наведении
-*/
 
 .nav > ul > li :hover:before {
   width: 0%;
@@ -533,7 +477,6 @@ height: 50px;
 
 .velo {
   display: block;
-  /*  ширна произвольная, не стесняйтесь экспериментировать */
   width: 280px;
   min-width: 280px;
   height: 100%;
