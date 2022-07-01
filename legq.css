@@ -288,6 +288,13 @@ height: 50px;
 .tyty{
   display: flex;
   flex-direction: column;
+
+}
+.bmx{
+  display: none;
+}
+.spare{
+  display: none;
 }
   @media screen and (max-width:1455px) {
     
@@ -650,6 +657,354 @@ color: black;
 
   transition: width 0s ease;
 }
+.bmx {
+  display: block;
+  width: 280px;
+  min-width: 280px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  left: -360px;
+  padding: 15px 20px;
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  transition: left 0.3s;
+  background: white;
+  z-index: 2005;
+}
 
 
+.tirdnav {
+  display: block;
+  position:absolute;
+
+  
+  
+  padding: 1.4;
+  color: black;
+  cursor: pointer;
+  font-size: 1.4em;
+  line-height: 0.2;
+  z-index: 2010;
+  -webkit-transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+
+[id='tirdnav']:checked ~ .bmx > .tirdnav {
+  left: auto;
+  top:1em;
+  
+}
+.tirdnav:after {
+  content: '\1F892';
+  text-decoration: none;
+color: black;
+}
+
+
+
+
+[id='tirdnav']:checked ~ .bmx {
+  left: 0;
+  box-shadow:inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -moz-box-shadow: inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -webkit-box-shadow: inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  overflow-y:auto;
+}/*!*/
+
+
+
+[id='tirdnav']:checked ~ main  {
+  -webkit-transform: translateX(320px);
+  -moz-transform: translateX(320px);
+  transform: translateX(320px);
+  margin-right: 320px;
+}
+
+
+
+[id='tirdnav']:checked ~ .bmx > .tirdnav:after {
+  content: '\2B9C';
+  color: black;
+  font-size: 36px;
+  left: 50px;
+  bottom: 10px;
+
+}
+
+
+
+.bmx > ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ 
+}
+.bmx >ul >li > a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.bmx > ul > li {
+  line-height: 2.5;
+  opacity: 0;
+  
+  transform: translateX(-50%);
+  
+  transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='tirdnav']:checked ~ .bmx > ul > li {
+  opacity: 1;
+ 
+  transform: translateX(0);
+}
+
+
+.bmx > ul > li  {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+ top: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: BLACK;
+  width: 100%;
+  text-decoration: none;
+
+  
+  transition: color .5s ease, padding .5s ease;
+}
+
+
+.bmx > ul > li:hover,
+.bmx > ul > li :focus {
+  
+  padding-left: 15px;
+}
+
+
+
+.bmx > ul > li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+
+  transition: width 0s ease;
+}
+
+.bmx > ul > li :after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: grey;
+
+  transition: width .5s ease;
+}
+
+
+
+.bmx > ul > li:hover:before {
+  width: 0%;
+  background: grey;
+
+  transition: width .5s ease;
+}
+
+.bmx > ul > li :hover:after {
+  width: 0%;
+  background: transparent;
+
+  transition: width 0s ease;
+}
+.spare {
+  display: block;
+  width: 280px;
+  min-width: 280px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  left: -360px;
+  padding: 15px 20px;
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  transition: left 0.3s;
+  background: white;
+  z-index: 2005;
+}
+
+
+.fornav {
+  display: block;
+  position:absolute;
+
+  
+  
+  padding: 1.4;
+  color: black;
+  cursor: pointer;
+  font-size: 1.4em;
+  line-height: 0.2;
+  z-index: 2010;
+  -webkit-transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+
+[id='fornav']:checked ~ .spare > .fornav {
+  left: auto;
+  top:1em;
+  
+}
+.fornav:after {
+  content: '\1F892';
+  text-decoration: none;
+color: black;
+}
+
+
+
+
+[id='fornav']:checked ~ .spare {
+  left: 0;
+  box-shadow:inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -moz-box-shadow: inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -webkit-box-shadow: inset 4px 0px 20px 0px rgba(0,0,0, 0.5);
+  overflow-y:auto;
+}/*!*/
+
+
+
+[id='fornav']:checked ~ main  {
+  -webkit-transform: translateX(320px);
+  -moz-transform: translateX(320px);
+  transform: translateX(320px);
+  margin-right: 320px;
+}
+
+
+
+[id='fornav']:checked ~ .spare > .fornav:after {
+  content: '\2B9C';
+  color: black;
+  font-size: 36px;
+  left: 50px;
+  bottom: 10px;
+
+}
+
+
+
+.spare > ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ 
+}
+.spare >ul >li > a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.spare > ul > li {
+  line-height: 2.5;
+  opacity: 0;
+  
+  transform: translateX(-50%);
+  
+  transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='fornav']:checked ~ .spare > ul > li {
+  opacity: 1;
+ 
+  transform: translateX(0);
+}
+
+
+.spare > ul > li  {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+ top: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: BLACK;
+  width: 100%;
+  text-decoration: none;
+
+  
+  transition: color .5s ease, padding .5s ease;
+}
+
+
+.spare > ul > li:hover,
+.spare > ul > li :focus {
+  
+  padding-left: 15px;
+}
+
+
+
+.spare > ul > li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+
+  transition: width 0s ease;
+}
+
+.spare > ul > li :after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: grey;
+
+  transition: width .5s ease;
+}
+
+
+
+.spare > ul > li:hover:before {
+  width: 0%;
+  background: grey;
+
+  transition: width .5s ease;
+}
+
+.spare > ul > li :hover:after {
+  width: 0%;
+  background: transparent;
+
+  transition: width 0s ease;
+}
 }
